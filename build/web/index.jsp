@@ -62,7 +62,7 @@
             <div class="home d-flex justify-content-center img-fluid">
             </div>
             <br>
-            <h2> Testing .....</h2>
+            <h2> Testing ......</h2>
             <h1 class="d-flex justify-content-center">Welcome to Awwar</h1>
             <p class="d-flex justify-content-center"> Design your product effortlessly and have fun </p>
               <div class="d-flex justify-content-center p-2 ">
