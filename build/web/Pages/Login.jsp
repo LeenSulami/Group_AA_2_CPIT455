@@ -1,4 +1,7 @@
 
+<%@ page import="java.sql.*" %>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,54 +9,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Awwar</title>
-    <img class="home shadow-lg " src="/Pictures/homepage.JPEG" alt="">
+    <img class="home shadow-lg " src="/Group_AA_2_CPIT455/Pictures/homepage.JPEG" alt="">
 
     <link rel="icon" href="./Pictures/icon.png">
-    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="/Group_AA_2_CPIT455/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-lg p-3 mb-0 ">
-        <a class="navbar-brand" >
-            <img src=" /Pictures/NavPictuer.Jpeg" width="50" height="50" class=" rounded-circle d-inline-block align-top text-light" alt="">
-           <p class="d-inline-block pt-3 text-light">Awaar</p>
-           </a>
-        <div class="container-fluid ">
-          <div class=""> 
-              <img class=" logo rounded-circle img-fluid" id="logo" src="./Pictures/icon.png" alt="">
-          </div>
-          <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-light"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contact</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servics
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item " href="#">action</a></li>
-                  <li><a class="dropdown-item" href="#"> action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-lg p-3 mb-0 ">
+    <a class="navbar-brand" >
+     <img src="/Group_AA_2_CPIT455/Pictures/NavPictuer.Jpeg" width="50" height="50" class=" rounded-circle d-inline-block align-top text-light" alt="">
+     <p class="d-inline-block pt-3 text-light">Awaar</p>
+     </a>
+
+    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light lead " aria-current="page" href="/Group_AA_2_CPIT455/index.jsp">Home</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Contact.jsp">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servics
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item lead " href="#"> Products </a></li>
+            <li><a class="dropdown-item lead " href="#"> action</a></li>
+            <li><hr class="dropdown-divider lead "></li>
+            <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light " type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 <div class="container content ">
     <div class="row pt-5">
@@ -82,7 +82,7 @@
             <form>
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label> 
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> 
+                <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp"> 
                </div>
                 <div class="mb-3"> 
                 <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1"> 
@@ -104,7 +104,7 @@
 <footer class="bg-dark text-center text-white fixed-bottom">
     <div class="container p-4 pb-0 ">
     <div class="text-center p-3 ">
-      � 2022 Copyright:
+      ï¿½ 2022 Copyright:
       <a class="text-white" href="https://mdbootstrap.com/">Awwar.com</a>
     </div>
     <!-- Copyright -->
