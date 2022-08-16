@@ -69,7 +69,7 @@
         <div class="card"> 
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="/Group_AA_2_CPIT455/Pictures/product_1.jpeg" class=" w-100" />
+            <img src="/Group_AA_2_CPIT455/Pictures/product_1.jpeg" class=" img-fluid w-100" />
             <a href="#!">
               <div class="mask">
                 <div class="d-flex justify-content-start align-items-end h-100">
@@ -97,7 +97,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-                     <img src="/Group_AA_2_CPIT455/Pictures/product_2.jpeg" class="w-75" />
+                     <img src="/Group_AA_2_CPIT455/Pictures/product_2.jpeg" class=" img-fluid w-75" />
 
             <a href="#!"> 
               <div class="mask">
@@ -127,7 +127,7 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="/Group_AA_2_CPIT455/Pictures/product_3.jpeg" class=" w-75" />
+            <img src="/Group_AA_2_CPIT455/Pictures/product_3.jpeg" class=" img-fluid w-75" />
             <a href="#!">
               <div class="mask">
                 <div class="d-flex justify-content-start align-items-end h-100">
@@ -158,7 +158,7 @@
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="/Group_AA_2_CPIT455/Pictures/product_4.jpeg" class=" w-75" />
+            <img src="/Group_AA_2_CPIT455/Pictures/product_4.jpeg" class=" img-fluid w-75" />
 
             <a href="#!">
               <div class="mask">
@@ -192,7 +192,7 @@
         <div class="card">
           <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
             data-mdb-ripple-color="light">
-            <img src="/Group_AA_2_CPIT455/Pictures/product_5.jpeg" class=" w-75" />
+            <img src="/Group_AA_2_CPIT455/Pictures/product_5.jpeg" class=" img-fluid w-75" />
                 <a href="#!">
               <div class="mask">
                 <div class="d-flex justify-content-start align-items-end h-100"></div>
@@ -209,7 +209,7 @@
             <a href="" class="text-reset">
               <p>Category</p>
             </a>
-            <h6 class="mb-3">$61.99</h6>
+            <h6 class="mb-3">prise </h6>
           </div>
         </div>
       </div>
@@ -217,7 +217,7 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-            <img src="/Group_AA_2_CPIT455/Pictures/product_6.jpeg" class=" w-75" />
+            <img src="/Group_AA_2_CPIT455/Pictures/product_6.jpeg" class=" img-fluid w-75" />
 
             <a href="#!">
               <div class="mask">

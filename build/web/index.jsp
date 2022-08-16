@@ -55,7 +55,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light " type="submit">Search</button>
+              <button class="btn btn-outline-light "  type="submit">Search</button>
             </form>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <p class="d-flex justify-content-center"> Design your product effortlessly and have fun </p>
               <div class="d-flex justify-content-center p-2 ">
                 <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button">  <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login.jsp"> login <span></span> </button></a>  
-                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button"> <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/SignUp.jsp"> Signup <span></span> </a></button>
+                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button"> <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/insert/SignUp.jsp"> Signup <span></span> </a></button>
               </div>
         </div>
     </div>

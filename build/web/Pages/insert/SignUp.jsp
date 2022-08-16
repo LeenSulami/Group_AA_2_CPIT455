@@ -81,20 +81,39 @@
   </div>
   <div class="row">
       <div class="col-6">
-          <form>
+          <form action="insert.jsp" method="post">
               <div class="col">
-                  <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">First Name</label> 
-                <input type="text" class="form-control" >
- 
-    
-                  <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Last Name</label> 
-
-                <input type="text" class="form-control" >
-
-            </div>
-              <div class="mb-3"> <label for="exampleInputEmail1" class="form-label">Email address</label> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> </div>
-              <div class="mb-3"> <label for="exampleInputPassword1" class="form-label">Password</label> <input type="password" class="form-control" id="exampleInputPassword1"> </div>
-                     </div>
+                  <div class="mb-3">
+                 <label  class="form-label">National ID</label> 
+                 <input type="text" name="id" class="form-control" pattern="[0-9]{10}" required >
+                 </div>
+                  
+                 <div class="mb-3">
+                 <labelclass class="form-label">First Name</label> 
+                 <input type="text" name="firstname" class="form-control" required maxlength="50">
+                 </div>
+                  
+                 <div class="mb-3">
+                 <label  class="form-label">Last Name</label> 
+                 <input type="text" name="lastname" class="form-control"required maxlength="50">
+                 </div>
+                  
+                <div class="mb-3">
+                <label  class="form-label">Mobile number</label> 
+                <input type="tel" name="phoneNumber" pattern="(05)?[0,5,3,9,4,6][0-9]{7}" class="form-control"required >
+                </div>
+                  
+              <div class="mb-3"> 
+              <label class="form-label">Email address</label> 
+              <input type="email" name="email" class="form-control" requierd aria-describedby="emailHelp" maxlength="70" placeholder="example@example.com" > 
+              </div>
+                 
+                  
+              <div class="mb-3"> <label  class="form-label">Password</label> 
+                  <input type="password" name="password" class="form-control"   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+              </div>
+                  
+             </div>
       </div>
       <div class=" text-center">
         <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="#"> SignUp </button></a>  
