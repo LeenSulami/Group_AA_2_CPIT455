@@ -45,7 +45,9 @@
                 <li><a class="dropdown-item lead" href="#">Something else here</a></li>
               </ul>
             </li>
-            
+             <li class="nav-item">
+                <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
+              </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">

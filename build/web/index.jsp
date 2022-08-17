@@ -42,7 +42,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servics
+                  Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledsby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp"> Products </a></li>

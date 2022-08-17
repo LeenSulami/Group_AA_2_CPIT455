@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Awwar</title>
+    <title>Awaar</title>
 
     <link rel="icon" href="./Pictures/icon.png">
     <link rel="stylesheet" href="/Group_AA_2_CPIT455/stylesheet.css">
@@ -40,7 +40,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Servics
+            Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp">action</a></li>
@@ -74,7 +74,7 @@
     <div class="row pt-5">
         <div class=" col-4 ">
             
-           <h2 class=" text-dark">Account Information    </h2>
+           <h2 class=" text-dark">Account Information </h2>
          </div> 
     </div>
 <dic class="row p-4">
@@ -117,11 +117,15 @@
          <div class="row">    
            <div class="col-12 text-center ">      
            <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="#"> update </button></a>  
-           <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="#"> Delete </button></a>  
+           <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login/Delete.jsp?id=<%=result.getString("id")%>"> Delete </button></a>  
 
          </div>
       </form>
-               <%   } }%>         
+               <%   } }
+else {
+response.sendRedirect("/Group_AA_2_CPIT455/Pages/Login/Login.jsp");
+} 
+               %>         
      </div>
          </div>
               </div>

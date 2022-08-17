@@ -56,7 +56,15 @@ public class DB_connector {
        
     }
      
-        
+      public ResultSet showInfo(String ID){
+        sqlQuery = "SELECT * FROM user;";
+        try{
+            preparedStmt = connection.prepareStatement(sqlQuery);
+            resultSet = preparedStmt.executeQuery();
+        }catch(SQLException e){}
+        return resultSet;
+    }
+      
     public ResultSet getInfo(String User_Email , String User_Password ) {
         sqlQuery = "SELECT * FROM user WHERE email= '"+ User_Email +"' AND password= '"+ User_Password +"';";
         try{
@@ -69,6 +77,28 @@ public class DB_connector {
         }
         return resultSet;
     }
+    
+    public int DeleteInformtaion(String ID) {
+  sqlQuery = " Delete FROM user WHERE id =  ' " + ID +" ' ;" ; 
+    try{
+            preparedStmt = connection.prepareStatement(sqlQuery);
+             preparedStmt.executeUpdate();
+              return 1;
+            
+
+       }
+        catch(SQLException e){
+            e.printStackTrace();
+            return -1;
+        }
+     
+    } 
+    
+    
+    
+    
+    
+    
     
 }
 

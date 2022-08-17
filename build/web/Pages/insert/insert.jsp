@@ -37,7 +37,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servics
+                Services
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp"> Products </a></li>
@@ -46,7 +46,9 @@
                 <li><a class="dropdown-item lead" href="#">Something else here</a></li>
               </ul>
             </li>
-            
+             <li class="nav-item">
+                <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
+              </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
