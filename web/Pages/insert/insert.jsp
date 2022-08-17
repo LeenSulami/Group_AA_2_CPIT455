@@ -10,7 +10,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Signup</title>
+    <title>Sign up</title>
+    <img class="home shadow-lg " src="/Group_AA_2_CPIT455/Pictures/homepage.JPEG" alt="">
     <link rel="icon" href="/Group_AA_2_CPIT455/Pictures/icon.png">
     <link rel="stylesheet" href="/Group_AA_2_CPIT455/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -66,9 +67,9 @@
       
       if(connector != null ){
       
-      int isInsert = connector.insert(id,firstname,lastname,email,password,phoneNumber);
+      int isInserted = connector.insert(id,firstname,lastname,email,password,phoneNumber);
       
-      if(isInsert > 0){
+      if(isInserted > 0){
        %>
    <div class="container content ">
     <div class="row pt-5">
@@ -86,7 +87,11 @@
 </div>   
       <%}
 
-  }%>
+  }
+      else {
+out.print("Connection is null");
+}
+      %>
       
     </body>
 </html>

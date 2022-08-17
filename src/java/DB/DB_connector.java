@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  */
 public class DB_connector {
     
-    String URL = "jdbc:mysql://localhost:3306/Awaar_system?useSSL=false";
+    String URL = "jdbc:mysql://localhost:3306/awaar_system?useSSL=false";
     String USERNAME= "root"; // use your username of Mysql server
     String PASSWORD ="1234321"; // use your password of Mysql server
     Connection connection = null;
@@ -53,7 +53,21 @@ public class DB_connector {
             e.printStackTrace();    
              return -1;
         }
+       
+    }
      
+        
+    public ResultSet getInfo(String User_Email , String User_Password ) {
+        sqlQuery = "SELECT * FROM user WHERE email= " + "'"+ User_Email +"'" +" AND password= " + "'"+ User_Password +"';" ;
+        try{
+            preparedStmt = connection.prepareStatement(sqlQuery);
+            resultSet = preparedStmt.executeQuery();
+            
+        }catch(SQLException e){
+            System.out.println("This user is not exist");
+          
+        }
+        return resultSet;
     }
     
 }

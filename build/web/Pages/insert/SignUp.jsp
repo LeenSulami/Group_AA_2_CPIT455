@@ -36,7 +36,7 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Servics
+            Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp"> Products </a></li>
@@ -61,7 +61,7 @@
             <div class="home d-flex justify-content-center img-fluid">
             </div>
             <br>
-            <h1 class="d-flex justify-content-center">Welcome to Awwar</h1>
+            <h1 class="d-flex justify-content-center">Welcome to Awaar</h1>
             <p class="d-flex justify-content-center"> Design your product effortlessly and have fun </p>
               <div class="d-flex justify-content-center p-2 ">
 
@@ -100,7 +100,7 @@
                   
                 <div class="mb-3">
                 <label  class="form-label">Mobile number</label> 
-                <input type="tel" name="phoneNumber" pattern="(05)?[0,5,3,9,4,6][0-9]{7}" class="form-control"required >
+                <input type="tel" name="phoneNumber" pattern="(05)?[0,5,3,9,4,6][0-9]{7}" class="form-control"required placeholder="05XXXXXXXX">
                 </div>
                   
               <div class="mb-3"> 
@@ -128,7 +128,7 @@
     <div class="container p-4 pb-0 ">
     <div class="text-center p-3 ">
       ï¿½ 2022 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Awwar.com</a>
+      <a class="text-white" href="/Group_AA_2_CPIT455/index.jsp">Awaar.com</a>
     </div>
     <!-- Copyright -->
   </footer>

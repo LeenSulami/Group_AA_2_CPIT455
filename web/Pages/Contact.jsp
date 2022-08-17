@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Awwar</title>
     <img class="home shadow-lg " src="/Group_AA_2_CPIT455/Pictures/homepage.JPEG" alt="">
-
+    <><!-- logo picture -->
     <link rel="icon" href="/Group_AA_2_CPIT455/Pictures/icon.png">
     <link rel="stylesheet" href="/Group_AA_2_CPIT455/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -61,7 +61,7 @@
             <div class="home d-flex justify-content-center img-fluid">
             </div>
             <br>
-            <h1 class="d-flex justify-content-center">Welcome to Awwar</h1>
+            <h1 class="d-flex justify-content-center">Welcome to Awaar</h1>
             <p class="d-flex justify-content-center"> Design your product effortlessly and have fun </p>
               <div class="d-flex justify-content-center p-2 ">
 
@@ -102,7 +102,7 @@
     <div class="container p-4 pb-0 ">
     <div class="text-center p-3 ">
       ï¿½ 2022 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Awwar.com</a>
+      <a class="text-white"href="/Group_AA_2_CPIT455/index.jsp">Awaar.com</a>
     </div>
     <!-- Copyright -->
   </footer>

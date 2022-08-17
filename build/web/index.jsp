@@ -70,8 +70,8 @@
             <h1 class="d-flex justify-content-center ">Welcome to Awwar</h1>
             <p class="d-flex justify-content-center"> Design your product effortlessly and have fun </p>
               <div class="d-flex justify-content-center p-2 ">
-                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button">  <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login.jsp"> login <span></span> </button></a>  
-                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button"> <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/insert/SignUp.jsp"> Signup <span></span> </a></button>
+                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button">  <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login/Login.jsp"> Login <span></span> </a> </button>  
+                <button class="main-btn m-3  btn border border-dark border-3 rounded-pill" type="button"> <a class=" text-light text-decoration-none" href="/Group_AA_2_CPIT455/Pages/insert/SignUp.jsp"> Sign Up <span></span> </a></button>
               </div>
         </div>
     </div>
@@ -138,7 +138,7 @@
     <div class="container p-4 pb-0 ">
     <div class="text-center p-3 ">
       � 2022 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Awwar.com</a>
+      <a class="text-white" href="/Group_AA_2_CPIT455/index.jsp">Awwar.com</a>
     </div>
     <!-- Copyright -->
   </footer>
