@@ -58,7 +58,7 @@ public class DB_connector {
      
         
     public ResultSet getInfo(String User_Email , String User_Password ) {
-        sqlQuery = "SELECT * FROM user WHERE email= " + "'"+ User_Email +"'" +" AND password= " + "'"+ User_Password +"';" ;
+        sqlQuery = "SELECT * FROM user WHERE email= '"+ User_Email +"' AND password= '"+ User_Password +"';";
         try{
             preparedStmt = connection.prepareStatement(sqlQuery);
             resultSet = preparedStmt.executeQuery();
