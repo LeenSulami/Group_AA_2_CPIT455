@@ -81,7 +81,7 @@
             <div class="home d-flex justify-content-center img-fluid">
             </div>
             <br>
-            <h1 class="d-flex justify-content-center"> Good Bye </h1>
+
             <p class="d-flex justify-content-center"> Your Account Has Been Successfully Updated </p>
             <div class="d-flex justify-content-center p-2 ">
 
@@ -90,7 +90,7 @@
     </div>
 </div>   
       <%
-   session.invalidate();
+//   session.invalidate();
           }
       %>
     </body>

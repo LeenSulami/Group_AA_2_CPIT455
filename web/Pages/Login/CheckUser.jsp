@@ -85,6 +85,12 @@
         </div>
     </div>
 </div>   
+<%}
+else {
+      response.sendRedirect("Login.jsp");
+}      
+  }  else {
+out.print("Connection is null");} }%>
 <br><br><br><br>
 <footer class="bg-dark text-center text-white fixed-bottom">
     <div class="container p-4 pb-0 ">
