@@ -126,6 +126,18 @@ public class DB_connector {
         }
         return resultSet;
     }
+            public ResultSet getProduct() {
+        sqlQuery = "SELECT * FROM product;";
+        try{
+            preparedStmt = connection.prepareStatement(sqlQuery);
+            resultSet = preparedStmt.executeQuery();
+            
+        }catch(SQLException e){
+            System.out.println("This product is not exist");
+          
+        }
+        return resultSet;
+    }
  }
 
 
