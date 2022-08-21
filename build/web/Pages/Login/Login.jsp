@@ -96,8 +96,8 @@
                     <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="#"> login </a></button>  
                 </div>
                 <hr> 
-                <a href=""> Forget your password?</a>
-                  </form>
+               
+                 <a href="/Group_AA_2_CPIT455/Pages//forgot-process.jsp" class="btn btn-link"> Forgot Your Password? </a>
         </div>
         </div>
       

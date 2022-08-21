@@ -116,7 +116,7 @@
               </div>
          <div class="row">    
            <div class="col-12 text-center ">      
-           <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="#"> update </button></a>  
+           <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login/update.jsp?id=<%=result.getString("id")%>"> update </button></a>  
            <button class=" -dark text-center main-btn m-3  btn border border-dark border-3 rounded-pill" type="submit">  <a class=" text-dark text-decoration-none" href="/Group_AA_2_CPIT455/Pages/Login/Delete.jsp?id=<%=result.getString("id")%>"> Delete </button></a>  
 
          </div>

@@ -15,63 +15,63 @@
     <link rel="stylesheet" href="/Group_AA_2_CPIT455/stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-lg p-3 mb-0 ">
-    <a class="navbar-brand" >
-     <img src="/Group_AA_2_CPIT455/Pictures/NavPictuer.Jpeg" width="50" height="50" class=" rounded-circle d-inline-block align-top text-light" alt="">
-     <p class="d-inline-block pt-3 text-light">Awaar</p>
-     </a>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow-lg p-3 mb-0 ">
+        <a class="navbar-brand" >
+            <img src="/Group_AA_2_CPIT455/Pictures/NavPictuer.Jpeg" width="50" height="50" class=" rounded-circle d-inline-block align-top text-light" alt="">
+            <p class="d-inline-block pt-3 text-light">Awaar</p>
+        </a>
 
-    <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-light"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active text-light lead " aria-current="page" href="/Group_AA_2_CPIT455/index.jsp">Home</a> 
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Contact.jsp">Contact</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item lead " href="#"> Products </a></li>
-            <li><a class="dropdown-item lead " href="#"> action</a></li>
-            <li><hr class="dropdown-divider lead "></li>
-            <li><a class="dropdown-item lead" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-           <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
-         </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light " type="submit">Search</button>
-      </form>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-light lead " aria-current="page" href="/Group_AA_2_CPIT455/index.jsp">Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Contact.jsp">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light lead" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item lead " href="#"> Products </a></li>
+                        <li><a class="dropdown-item lead " href="#"> action</a></li>
+                        <li><hr class="dropdown-divider lead "></li>
+                        <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light " type="submit">Search</button>
+            </form>
+        </div>
     </div>
-  </div>
 </nav>
 
-             <%
-            String UserEmail= request.getParameter("email"); 
-            String UserPassword = request.getParameter("password"); 
-            if( UserEmail != null && UserEmail.length() !=0){
-                DB.DB_connector userInfo = new DB.DB_connector();
-                
-                if (userInfo != null){ 
+<%
+    String UserEmail = request.getParameter("email");
+    String UserPassword = request.getParameter("password");
+    if (UserEmail != null && UserEmail.length() != 0) {
+        DB.DB_connector userInfo = new DB.DB_connector();
 
-                ResultSet result = userInfo.getInfo(UserEmail,UserPassword);
-                if (result != null && result.next()){
-                   session.setAttribute("email", UserEmail);
-                   session.setAttribute("password", UserPassword);
+        if (userInfo != null) {
 
-                  %>
-   <div class="container content ">
+            ResultSet result = userInfo.getInfo(UserEmail, UserPassword);
+            if (result != null && result.next()) {
+                session.setAttribute("email", UserEmail);
+                session.setAttribute("password", UserPassword);
+
+%>
+<div class="container content ">
     <div class="row pt-5">
         <div class=" column ">
             <div class="home d-flex justify-content-center img-fluid">
@@ -81,27 +81,20 @@
             <p class="d-flex justify-content-center"> Your Account Has Been Successfully Verified </p>
             <div class="d-flex justify-content-center p-2 ">
 
-              </div>
+            </div>
         </div>
     </div>
 </div>   
-      <%}
-else {
-      response.sendRedirect("Login.jsp");
-}      
-  }  else {
-out.print("Connection is null");} }%>
-       
-         <br><br><br><br>
+<br><br><br><br>
 <footer class="bg-dark text-center text-white fixed-bottom">
     <div class="container p-4 pb-0 ">
-    <div class="text-center p-3 ">
-      ï¿½ 2022 Copyright:
-      <a class="text-white" href="/Group_AA_2_CPIT455/index.jsp">Awaar.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer> 
-    </body>
+        <div class="text-center p-3 ">
+            ï¿½ 2022 Copyright:
+            <a class="text-white" href="/Group_AA_2_CPIT455/index.jsp">Awaar.com</a>
+        </div>
+        <!-- Copyright -->
+</footer> 
+</body>
 
-    
+
 </html>
