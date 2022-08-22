@@ -43,15 +43,17 @@
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp">action</a></li>
-            <li><a class="dropdown-item lead " href="#"> action</a></li>
-            <li><hr class="dropdown-divider lead "></li>
-            <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+            <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp">Products</a></li>
+
           </ul>
         </li>
+           <li class="nav-item">
+           <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/logout.jsp">Logout</a>
+          </li>
          <li class="nav-item">
            <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
          </li>
+         
       </ul>
       <form class="d-flex">
         <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
@@ -83,7 +85,7 @@
                    <form action="Update.jsp" method="POST">
                   <div class="mb-3">
                  <label  class="form-label">National ID</label> 
-                 <input type="text" name="id" class="form-control" pattern="[0-9]{10}" required value="<%= result.getString("id")%>" />
+                 <input type="hidden"  name="id" class="form-control " pattern="[0-9]{10}" required value="<%= result.getString("id")%>" />
                  </div>
           
                  <div class="mb-3">
@@ -121,9 +123,23 @@
 
          </div>
       </form>
-               <%   } }
-else {
-response.sendRedirect("/Group_AA_2_CPIT455/Pages/Login/Login.jsp");
+               <%   } } 
+else {%>
+ <div class="container content ">
+    <div class="row pt-5">
+        <div class=" column ">
+            <div class="home d-flex justify-content-center img-fluid">
+            </div>
+            <br>
+            <p class="d-flex justify-content-center">  sorry :(  </p>
+            <p class="d-flex justify-content-center"> You are not authorized to access this page  </p>
+            <p class="d-flex justify-content-center"> try log in or sign up  </p>
+            <div class="d-flex justify-content-center p-2 ">
+           </div>
+        </div>
+    </div>
+</div> 
+ <%
 } 
                %>         
      </div>

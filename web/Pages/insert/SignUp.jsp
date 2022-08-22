@@ -40,9 +40,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp"> Products </a></li>
-            <li><a class="dropdown-item lead " href="#"> action </a></li>
-            <li><hr class="dropdown-divider lead "></li>
-            <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+
           </ul>
         </li>
          <li class="nav-item">
@@ -92,12 +90,12 @@
                   
                  <div class="mb-3">
                  <labelclass class="form-label">First Name</label> 
-                 <input type="text" name="firstname" class="form-control" required maxlength="50">
+                 <input type="text" name="firstname"   pattern="[a-zA-Z'-'\s]*" class="form-control" required maxlength="50">
                  </div>
                   
                  <div class="mb-3">
                  <label  class="form-label">Last Name</label> 
-                 <input type="text" name="lastname" class="form-control"required maxlength="50">
+                 <input type="text" name="lastname"  pattern="[a-zA-Z'-'\s]*" class="form-control"required maxlength="50">
                  </div>
                   
                 <div class="mb-3">
@@ -112,7 +110,7 @@
                  
                   
               <div class="mb-3"> <label  class="form-label">Password</label> 
-                  <input type="password" name="password" class="form-control"   title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+                  <input type="password" name="password" class="form-control"  pattern="/^[a-zA-Z0-9!@#\$%\^\&*_=+-]{8,12}$/g" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
               </div>
                   
              </div>

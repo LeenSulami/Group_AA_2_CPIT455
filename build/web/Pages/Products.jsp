@@ -45,15 +45,16 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item lead " href="/Group_AA_2_CPIT455/Pages/Products.jsp">action</a></li>
-            <li><a class="dropdown-item lead " href="#"> action</a></li>
-            <li><hr class="dropdown-divider lead "></li>
-            <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+
           </ul>
         </li>
          <li class="nav-item">
                 <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/Login/Account.jsp">Account</a>
               </li>
       </ul>
+          <li class="nav-item">
+                <a class="nav-link text-light lead" href="/Group_AA_2_CPIT455/Pages/logout.jsp">logout</a>   
+              </li>
       <form class="d-flex">
         <input class="form-control me-2 lead" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light " type="submit">Search</button>

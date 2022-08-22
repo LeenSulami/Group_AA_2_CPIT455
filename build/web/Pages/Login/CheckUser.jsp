@@ -40,9 +40,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item lead " href="#"> Products </a></li>
-                        <li><a class="dropdown-item lead " href="#"> action</a></li>
-                        <li><hr class="dropdown-divider lead "></li>
-                        <li><a class="dropdown-item lead" href="#">Something else here</a></li>
+
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -86,8 +84,25 @@
     </div>
 </div>   
 <%}
-else {
-      response.sendRedirect("Login.jsp");
+else {%>
+    <div class="container content ">
+    <div class="row pt-5">
+        <div class=" column ">
+            <div class="home d-flex justify-content-center img-fluid">
+            </div>
+            <br>
+           
+            <p class="d-flex justify-content-center"> We are sorry :(  </p>
+                        <p class="d-flex justify-content-center"> wrong email or password or both incorrect   </p>
+            <div class="d-flex justify-content-center p-2 ">
+
+            </div>
+        </div>
+    </div>
+</div> 
+      
+      
+      <%
 }      
   }  else {
 out.print("Connection is null");} }%>
